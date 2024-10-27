@@ -17,7 +17,46 @@
 </head>
 
 <body>
+    <header class="sticky-top bg-white">
+        <nav class="container d-flex justify-content-between align-items-center py-2">
+            <a href="#" class="navbar-brand"><img src="logo.png" alt="Site Clone Logo" class="img-fluid"
+                    style="width:150px;"></a>
+            <ul class="nav d-none d-md-flex">
+                <li class="nav-item"><a class="nav-link" href="#">Home</a></li>
+                <li class="nav-item"><a class="nav-link" href="#">About</a></li>
+                <li class="nav-item"><a class="nav-link" href="#">Services</a></li>
+                <li class="nav-item"><a class="nav-link" href="#">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
 
+    <main class="container my-5">
+        <div class="row">
+            <section class="col-lg-5 mb-4">
+                <div class="p-4 shadow bg-white rounded">
+                    <h2 class="mb-4">Sign up for exclusive deals</h2>
+                    <form>
+                        <div class="mb-3">
+                            <input type="text" class="form-control" placeholder="Name">
+                        </div>
+                        <div class="mb-3">
+                            <input type="email" class="form-control" placeholder="Email">
+                        </div>
+                        <div class="mb-3 d-flex">
+                            <input type="text" class="form-control me-2" placeholder="Phone">
+                            <input type="text" class="form-control" placeholder="Ext.">
+                        </div>
+                        <div class="mb-3">
+                            <textarea class="form-control" rows="3" placeholder="Message"></textarea>
+                        </div>
+                        <div class="form-check mb-3">
+                            <input type="checkbox" class="form-check_input" id="termsCheck">
+                            <label class="form-check-label" for="termsCheck">Agree to terms</label>
+                        </div>
+                        <button type="submit" class=" btn btn-primary w-100">Submit</button></button>
+                    </form>
+                </div>
+            </section>
 </body>
 
 </html>
