@@ -13,13 +13,16 @@
         defer></script>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
     <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap">
+    <link rel="stylesheet" href="style.css">
     <title>CloneSiteCheckpoint</title>
 </head>
 
 <body class="debug">
     <header class="sticky-top">
         <nav class="container d-flex justify-content-between align-items-center py-2">
-            <a href="#" class="navbar-brand"><img src="logo.png" alt="Site Clone Logo" class="img-fluid"></a>
+            <a href="#" class="navbar-brand">
+                <img src="logo.png" alt="Site Clone Logo" class=" img-fluid">
+            </a>
             <ul class="nav d-none d-md-flex">
                 <li class="nav-item"><a class="nav-link" href="#">Home</a></li>
                 <li class="nav-item"><a class="nav-link" href="#">About</a></li>
@@ -30,11 +33,14 @@
     </header>
 
     <main class="container my-5">
-        <section id="main-feature" class="row gx-5">
-            <div class="col-lg-6 col-md-12 mb-4">
-                <div class="p-4 shadow bg-white rounded">
-                    <h2 class="mb-4 text-dark">Sign up for exclusive deals</h2>
-                    <form>
+        <!-- FIXME we don't have the header img, our form, and text should be over the top of the image with the text disappearing on mobile -->
+        <!-- reference "READ", both hero-bg and filter options card -->
+        <section class="hero-section position-relative">
+            <div class="hero-bg">
+                <img src="chair.jpg" alt="Chair" class="img-fluid">
+                <div class="overlay-content">
+                    <h2 class="hero-text">Check out our latest offers!</h2>
+                    <form class="p-4 shadow bg-white rounded">
                         <div class="mb-3">
                             <input type="text" class="form-control" placeholder="Name">
                         </div>
@@ -56,7 +62,6 @@
                     </form>
                 </div>
         </section>
-
         <div class="col-lg-6 col-md-12 mb-4"></div>
         <div class="p-4 shawdow bg-white rounded">
             <h2>Check out this chair!</h2>
@@ -76,8 +81,8 @@
                     quis
                     illo quod libero molestiae impedit atque aperiam.</p>
             </div>
-            <div class="col-lg-4">
-                <ul class="list-group">
+            <div class="col-lg-4 overflow-visible">
+                <ul class="list-group spilling-card">
                     <li class="list-group-item d-flex align-items-center"><i
                             class="fas fa-tools me-2 text-warning"></i>The
                         best technical professionals</li>
@@ -93,20 +98,21 @@
             </div>
         </section>
 
+
         <section id="testimonials" class="row my-5">
-            <div class="col-lg-4 mb-4 d-flex flex-column align-items-center">
+            <div class="col-lg-4 mb-4 d-flex flex-column align-items-center order-3 order-lg-1">
                 <div class="p-3 testimonial-card text-center">
                     <p>"These chairs changed my life! I no longer hate sitting down."</p>
                     <p><strong>- Mark Ohnsman</strong></p>
                 </div>
             </div>
-            <div class="col-lg-4 mb-4 d-flex flex-column align-items-center">
-                <div class="p-3 testimonial-card text-center">
+            <div class="col-lg-4 mb-4 d-flex flex-column align-items-center order-1 order-lg-2">
+                <div class="p-3 testimonial-card text-center testimonial-featured">
                     <p>"The support on my back and arms is incredible. Cool gamer chair!"</p>
                     <p><strong>- Oslo</strong></p>
                 </div>
             </div>
-            <div class="col-lg-4 mb-4 d-flex flex-column align-items-center">
+            <div class="col-lg-4 mb-4 d-flex flex-column align-items-center order-2 order-lg-3">
                 <div class="p-3 testimonial-card text-center">
                     <p>"I once tried to return a chair here, but they told me I wasn't from here."</p>
                     <p><strong>- Wild Goose</strong></p>
