@@ -11,16 +11,15 @@
         defer></script>
     <script id="debug-script" src="https://cdn.jsdelivr.net/gh/MickShannahan/style-debug@latest/debug.min.js"
         defer></script>
-    <link rel="stylesheet" href="styles.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
-    <title>CLoneSiteCheckpoint</title>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap">
+    <title>CloneSiteCheckpoint</title>
 </head>
 
 <body class="debug">
-    <header class="sticky-top bg-white">
+    <header class="sticky-top">
         <nav class="container d-flex justify-content-between align-items-center py-2">
-            <a href="#" class="navbar-brand"><img src="logo.png" alt="Site Clone Logo" class="img-fluid"
-                    style="width:150px;"></a>
+            <a href="#" class="navbar-brand"><img src="logo.png" alt="Site Clone Logo" class="img-fluid"></a>
             <ul class="nav d-none d-md-flex">
                 <li class="nav-item"><a class="nav-link" href="#">Home</a></li>
                 <li class="nav-item"><a class="nav-link" href="#">About</a></li>
@@ -31,10 +30,10 @@
     </header>
 
     <main class="container my-5">
-        <div class="row">
-            <section class="col-lg-5 mb-4">
+        <section id="main-feature" class="row gx-5">
+            <div class="col-lg-6 col-md-12 mb-4">
                 <div class="p-4 shadow bg-white rounded">
-                    <h2 class="mb-4">Sign up for exclusive deals</h2>
+                    <h2 class="mb-4 text-dark">Sign up for exclusive deals</h2>
                     <form>
                         <div class="mb-3">
                             <input type="text" class="form-control" placeholder="Name">
@@ -53,22 +52,24 @@
                             <input type="checkbox" class="form-check_input" id="termsCheck">
                             <label class="form-check-label" for="termsCheck">Agree to terms</label>
                         </div>
-                        <button type="submit" class=" btn btn-primary w-100">Submit</button></button>
+                        <button type="submit" class=" btn btn-primary w-100">Submit</button>
                     </form>
                 </div>
-            </section>
+        </section>
 
-            <section class="col-lg-7 position-relative">
-                <div class="overlay-text d-none d-lg-block text-white position-absolute p-4">
-                    <h2>Check out this chair!</h2>
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sunt delectus tenetur pariatur
-                        exercitationem at repellat ratione, voluptatibus nihil doloribus! Neque aliquam aut eum! Velit
-                        harum laudantium atque earum doloremque. Veritatis?>
-                        <img src="workspace.jpg" alt="workspace" class="img-fluid rounded shadow">
-            </section>
-        </div>s
-        <section class="row my-5">
-            <div class="col-lg-8 p-4 bg-primary text-white rounded">
+        <div class="col-lg-6 col-md-12 mb-4"></div>
+        <div class="p-4 shawdow bg-white rounded">
+            <h2>Check out this chair!</h2>
+            <p>This text highlights the key benefits of the product or service. The overlay is only visible on
+                desktop.</p>
+        </div>
+        <img src="workspace.jpg" alt="workspace" class="img-fluid rounded shadow">
+        </div>
+        </section>
+
+
+        <section id="features" class="row my-5 gx-5">
+            <div class="col-lg-6 p-4 bg-primary text-white rounded">
                 <h3>Here at Site Clone, we are family.</h3>
                 <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.
                     Numquam ratione in voluptatum quis quas voluptate at id expedita architecto. Quo consequatur eius
@@ -77,5 +78,61 @@
             </div>
             <div class="col-lg-4">
                 <ul class="list-group">
-
+                    <li class="list-group-item d-flex align-items-center"><i
+                            class="fas fa-tools me-2 text-warning"></i>The
+                        best technical professionals</li>
+                    <li class="list-group-item d-flex align-items-center"><i class="fas fa-car me-2 text-warning"></i>We
+                        drive our cars to work</li>
+                    <li class="list-group-item d-flex align-items-center"><i
+                            class="fas fa-phone me-2 text-warning"></i>Psychic office phones</li>
+                    <li class="list-group-item d-flex align-items-center"><i
+                            class="fas fa-bullseye me-2 text-warning"></i>Bubble icon usage</li>
+                    <li class="list-group-item d-flex align-items-center"><i
+                            class="fas fa-bolt me-2 text-warning"></i>Defining power</li>
                 </ul>
+            </div>
+        </section>
+
+        <section id="testimonials" class="row my-5">
+            <div class="col-lg-4 mb-4 d-flex flex-column align-items-center">
+                <div class="p-3 testimonial-card text-center">
+                    <p>"These chairs changed my life! I no longer hate sitting down."</p>
+                    <p><strong>- Mark Ohnsman</strong></p>
+                </div>
+            </div>
+            <div class="col-lg-4 mb-4 d-flex flex-column align-items-center">
+                <div class="p-3 testimonial-card text-center">
+                    <p>"The support on my back and arms is incredible. Cool gamer chair!"</p>
+                    <p><strong>- Oslo</strong></p>
+                </div>
+            </div>
+            <div class="col-lg-4 mb-4 d-flex flex-column align-items-center">
+                <div class="p-3 testimonial-card text-center">
+                    <p>"I once tried to return a chair here, but they told me I wasn't from here."</p>
+                    <p><strong>- Wild Goose</strong></p>
+                </div>
+            </div>
+        </section>
+
+        <section id="contact" class="map-container my-5">
+            <img src="map.png" alt="Map Location" class="img-fluid rounded">
+            <p class="text-center text-white mt-3">Visit us at 8455 Westpark St, Boise, ID 83704</p>
+        </section>
+    </main>
+
+    <footer class="bg-light text-center py-3 border-top">
+        <p>Contact us: (208) 391-5056 | Mon-Fri: 9:00AM - 5:00PM</p>
+        <div class="social-icons">
+            <a href="#"><i class="fab fa-github"></i></a>
+            <a href="#"><i class="fab fa-spotify"></i></a>
+            <a href="#"><i class="fab fa-tiktok"></i></a>
+            <a href="#"><i class="fab fa-google"></i></a>
+        </div>
+    </footer>
+
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+    </script>
+</body>
+
+</html>
